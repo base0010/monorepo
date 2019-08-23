@@ -197,6 +197,10 @@ workflows:
           requires:
             - build
 
+      - run-tests-2:
+          requires:
+            - build
+
       - ensure-updated-lockfiles:
           requires:
             - build
